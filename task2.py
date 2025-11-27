@@ -15,17 +15,16 @@ Your PST is 3.85
 Your total is 61.65
 """
 
-for i in range(1, 6):
-    input(f"Enter in price of item #{i}: ")
-    i += 1
-else:
-    subtotal = 
-    GST = subtotal*0.05
-    PST = subtotal*0.07
-    total = subtotal + GST + PST
-    print(f"Your subtotal is {subtotal}")
-    print(f"Your GST is {GST}")
-    print(F"Your PST is {PST}")
-    print(F"Your total is {total}")
+subtotal = 0
 
-#subtotal wo doyaruka
+for i in range(1, 6):
+    num = float(input(f"Enter in price of item #{i}: "))
+    subtotal += num
+
+GST = round(subtotal*0.05, 2)
+PST = round(subtotal*0.07, 2)
+total = round(subtotal + GST + PST, 2)
+print(f"Your subtotal is {subtotal}")
+print(f"Your GST is {GST}")
+print(F"Your PST is {PST}")
+print(F"Your total is {total}")

@@ -37,3 +37,16 @@ example:
 Enter a number: -4
 Invalid input
 """
+
+num = int(input("Enter a number: "))
+factorial = 1
+
+if num > 0:
+    for i in range (1, num):
+        fac = i*factorial
+        i +=1
+    print(f"{num}! is {fac}")
+else:
+    print("Invalid input")
+
+#yoku wakaran

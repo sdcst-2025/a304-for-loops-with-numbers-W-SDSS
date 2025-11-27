@@ -27,9 +27,6 @@ Enter number:4
 """
 num = int(input("Enter number: "))
 
-for i in range(12):
+for i in range(1, 13):
     i = num*i
-else:
-    pass
-
-#yoku wakaran
+    print(i, end=' ')

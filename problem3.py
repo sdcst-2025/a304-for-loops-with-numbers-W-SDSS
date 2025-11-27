@@ -17,3 +17,11 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+num = int(input("Enter a number: "))
+
+while num < 10:
+    for i in range (1, num):
+        
+
+#yoku wakaran

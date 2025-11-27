@@ -32,3 +32,5 @@ for i in range(1, 13):
     print(f"2% interest has been charged: {interest}")
     print(f"Your closing balance is {balance}")
     i += 1
+
+    #mazumazu yoku wakaran

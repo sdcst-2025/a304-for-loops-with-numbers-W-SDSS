@@ -22,3 +22,14 @@ enter a number:4
 ****
 
 """
+
+width = int(input("Enter a number: "))
+height = int(input("Enter a number: "))
+
+
+for i in range (height):
+    print("*")
+for i in range (width):
+        print("*", end="")
+
+#douyarunosa

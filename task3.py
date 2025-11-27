@@ -9,5 +9,3 @@ for i in range(1, 1001):
         print(i, end=' ')
     else:
         pass
-
-    #yoku wakaran
