@@ -19,9 +19,15 @@ the sum of the series is 1234
 """
 
 num = int(input("Enter a number: "))
+g = "1"
+total = 0
 
-while num < 10:
+if 0 < num < 10:
     for i in range (1, num):
-        
+        total = g*1
+        total += num
+    print(f"the sum of the series is {total}")
+else:
+    pass
 
 #yoku wakaran
