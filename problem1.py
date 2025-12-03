@@ -25,9 +25,8 @@ enter a number:4
 
 num = int(input("Enter a number: "))
 
-
-if num < 10:
-    for i in range (num):
-         print("*"*num)
-
-#2 nested loop ga necessary 
+for i in range (1, num):
+    print("*", end='')
+    for i in range(1, num):
+        print("*", end='')
+    print( )
