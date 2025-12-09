@@ -23,10 +23,11 @@ num = int(input("Enter a number: "))
 if 0 < num < 10:
     total = 0
     g = 0
-    for i in range (1, num+1):
-        total = g*10+1
+    for i in range (num):
+        g = 10**i
         total += g
-    print(f"the sum of the series is {total}")
+        sum = total
+    print(f"the sum of the series is {sum}")
 else:
     pass
 

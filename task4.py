@@ -23,16 +23,17 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+balance = 0
 
 for i in range(1, 13):
-    
-current =float(input(f"Enter your current balance{i}: "))
-totalpurchases = float(input(f"Enter total purchases for month({i}): "))
-totalpayment = float(input(f"Enter total paymets for month({i}): "))
+    totalpurchases = float(input(f"Enter total purchases for month({i}): "))
+    totalpayment = float(input(f"Enter total paymets for month({i}): "))
+    balance = balance + totalpurchases - totalpayment
+    if balance > 0:
+        interest = balance*0.02
+        balance += interest
+        print(f"2% interest has been charged: {interest}")
+    else:
+        interest = 0
 
-interest = (totalpurchases-totalpayment)*0.02
-balance = current-totalpurchases+totalpayment-interest
-print(f"2% interest has been charged: {interest}")
-print(f"Your closing balance is {balance}")
-
-    #mazumazu yoku wakaran
+    print(f"Your closing balance is {balance}")

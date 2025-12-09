@@ -25,7 +25,7 @@ enter a number:4
 
 num = int(input("Enter a number: "))
 
-for i in range (1, num):
+for i in range (1, num+1):
     print("*", end='')
     for i in range(1, num):
         print("*", end='')
