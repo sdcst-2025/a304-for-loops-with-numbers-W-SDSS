@@ -24,11 +24,8 @@ if 0 < num < 10:
     total = 0
     g = 0
     for i in range (num):
-        g = 10**i
+        g = g*10+1
         total += g
-        sum = total
-    print(f"the sum of the series is {sum}")
+    print(f"the sum of the series is {total}")
 else:
-    pass
-
-#yoku wakaran
+    pass       
